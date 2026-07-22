@@ -7,11 +7,11 @@ def count_chars(chars):
     digits = 0
     others = 0
     for char in chars:
-        if char.isalpha():
+        if char.isalpha():     #isalpha()方法用于判断字符串是否只包含字母字符
             letters += 1
         elif char == ' ':
             spaces += 1
-        elif char.isdigit():
+        elif char.isdigit():     #isdigit()方法用于判断字符串是否只包含数字字符
             digits += 1
         else:
             others += 1
