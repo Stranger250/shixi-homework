@@ -1,0 +1,10 @@
+YOLO 类别标签说明
+格式: class_id  class_name  # 中文说明
+==================================================
+1：toll_booth  # 收费亭
+2：lane_sign  # 车道标识牌
+3：anti_collision_bucket  # 防撞桶
+4：tunnel_entrance  # 隧道
+5：roadside_plant  # 路侧植株
+6：warning_sign  # 预警标识
+7：led_screen  # 电子显示屏
