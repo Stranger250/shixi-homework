@@ -1,0 +1,502 @@
+[
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "浙商银行企业信贷部叶老桂博士则从另一个角度对五道门槛进行了解读。叶老桂认为，对目前国内商业银行而言，",
+    "output": "[{\"entity\": \"浙商银行\", \"type\": \"company\", \"start\": 0, \"end\": 3}, {\"entity\": \"叶老桂\", \"type\": \"name\", \"start\": 9, \"end\": 11}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "生生不息CSOL生化狂潮让你填弹狂扫",
+    "output": "[{\"entity\": \"CSOL\", \"type\": \"game\", \"start\": 4, \"end\": 7}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "那不勒斯vs锡耶纳以及桑普vs热那亚之上呢？",
+    "output": "[{\"entity\": \"那不勒斯\", \"type\": \"organization\", \"start\": 0, \"end\": 3}, {\"entity\": \"锡耶纳\", \"type\": \"organization\", \"start\": 6, \"end\": 8}, {\"entity\": \"桑普\", \"type\": \"organization\", \"start\": 11, \"end\": 12}, {\"entity\": \"热那亚\", \"type\": \"organization\", \"start\": 15, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "加勒比海盗3：世界尽头》的去年同期成绩死死甩在身后，后者则即将赶超《变形金刚》，",
+    "output": "[{\"entity\": \"加勒比海盗3：世界尽头》\", \"type\": \"movie\", \"start\": 0, \"end\": 11}, {\"entity\": \"《变形金刚》\", \"type\": \"movie\", \"start\": 33, \"end\": 38}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "布鲁京斯研究所桑顿中国中心研究部主任李成说，东亚的和平与安全，是美国的“核心利益”之一。",
+    "output": "[{\"entity\": \"布鲁京斯研究所桑顿中国中心\", \"type\": \"organization\", \"start\": 0, \"end\": 12}, {\"entity\": \"研究部主任\", \"type\": \"position\", \"start\": 13, \"end\": 17}, {\"entity\": \"李成\", \"type\": \"name\", \"start\": 18, \"end\": 19}, {\"entity\": \"美国\", \"type\": \"address\", \"start\": 32, \"end\": 33}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "目前主赞助商暂时空缺，他们的球衣上印的是“unicef”（联合国儿童基金会），是公益性质的广告；",
+    "output": "[{\"entity\": \"unicef\", \"type\": \"organization\", \"start\": 21, \"end\": 26}, {\"entity\": \"联合国儿童基金会\", \"type\": \"organization\", \"start\": 29, \"end\": 36}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "此数据换算成亚洲盘罗马客场可让平半低水。",
+    "output": "[{\"entity\": \"罗马\", \"type\": \"organization\", \"start\": 9, \"end\": 10}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "你们是最棒的!#英雄联盟d学sanchez创作的原声王",
+    "output": "[{\"entity\": \"英雄联盟\", \"type\": \"game\", \"start\": 8, \"end\": 11}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "除了吴湖帆时现精彩，吴待秋、吴子深、冯超然已然归入二三流了，",
+    "output": "[{\"entity\": \"吴湖帆\", \"type\": \"name\", \"start\": 2, \"end\": 4}, {\"entity\": \"吴待秋\", \"type\": \"name\", \"start\": 10, \"end\": 12}, {\"entity\": \"吴子深\", \"type\": \"name\", \"start\": 14, \"end\": 16}, {\"entity\": \"冯超然\", \"type\": \"name\", \"start\": 18, \"end\": 20}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "在豪门被多线作战拖累时，正是他们悄悄追赶上来的大好时机。重新找回全队的凝聚力是拉科赢球的资本。",
+    "output": "[{\"entity\": \"拉科\", \"type\": \"organization\", \"start\": 39, \"end\": 40}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "主要属于结构性理财产品。上周交通银行发行了“天添利”系列理财产品，投资者在封闭期申购该系列理财产品，",
+    "output": "[{\"entity\": \"交通银行\", \"type\": \"company\", \"start\": 14, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "万通地产设计总监刘克峰；",
+    "output": "[{\"entity\": \"万通地产\", \"type\": \"company\", \"start\": 0, \"end\": 3}, {\"entity\": \"设计总监\", \"type\": \"position\", \"start\": 4, \"end\": 7}, {\"entity\": \"刘克峰\", \"type\": \"name\", \"start\": 8, \"end\": 10}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "彭久洋：我的魂飞了贝鲁斯科尼老古董收藏家（图）",
+    "output": "[{\"entity\": \"彭久洋\", \"type\": \"name\", \"start\": 0, \"end\": 2}, {\"entity\": \"贝鲁斯科尼\", \"type\": \"name\", \"start\": 9, \"end\": 13}, {\"entity\": \"收藏家\", \"type\": \"position\", \"start\": 17, \"end\": 19}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "会议批准了中国与欧盟海军、多国海上力量和北约等就在“国际推荐通行走廊”",
+    "output": "[{\"entity\": \"中国与欧盟海军\", \"type\": \"government\", \"start\": 5, \"end\": 11}, {\"entity\": \"北约\", \"type\": \"government\", \"start\": 20, \"end\": 21}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "他们需要1分确保小组出线。出线形势要求赫塔必须全力争胜。interwetten相同赔率下，",
+    "output": "[{\"entity\": \"赫塔\", \"type\": \"organization\", \"start\": 19, \"end\": 20}, {\"entity\": \"interwetten\", \"type\": \"organization\", \"start\": 28, \"end\": 38}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "20雷池，本场无冷迹象。",
+    "output": "[{\"entity\": \"雷池\", \"type\": \"address\", \"start\": 2, \"end\": 3}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "不久后，“星展中国”南宁分行也将择机开业。除新加坡星展银行外，多家外资银行最近纷纷扩大在华投资，",
+    "output": "[{\"entity\": \"“星展中国”南宁分行\", \"type\": \"company\", \"start\": 4, \"end\": 13}, {\"entity\": \"新加坡星展银行\", \"type\": \"company\", \"start\": 22, \"end\": 28}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "她写道：抗战胜利时我从重庆坐民联轮到南京，去中山陵瞻仰，也到秦淮河去过。然后就去北京了。",
+    "output": "[{\"entity\": \"重庆\", \"type\": \"address\", \"start\": 11, \"end\": 12}, {\"entity\": \"南京\", \"type\": \"address\", \"start\": 18, \"end\": 19}, {\"entity\": \"中山陵\", \"type\": \"scene\", \"start\": 22, \"end\": 24}, {\"entity\": \"秦淮河\", \"type\": \"scene\", \"start\": 30, \"end\": 32}, {\"entity\": \"北京\", \"type\": \"address\", \"start\": 40, \"end\": 41}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "除了资金支持之外，工行还为创业大学生提供包括存款、资金结算、电子银行、银行卡等一站式金融服务，",
+    "output": "[{\"entity\": \"工行\", \"type\": \"company\", \"start\": 9, \"end\": 10}, {\"entity\": \"大学生\", \"type\": \"position\", \"start\": 15, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "部分作品被加州地方艺术馆收藏。",
+    "output": "[{\"entity\": \"加州地方艺术馆\", \"type\": \"scene\", \"start\": 5, \"end\": 11}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "6月15日，河南省文物考古研究所曹操高陵文物队公开发表声明承认：“从来没有说过出土的珠子是墓主人的‘",
+    "output": "[{\"entity\": \"河南省文物考古研究所\", \"type\": \"organization\", \"start\": 6, \"end\": 15}, {\"entity\": \"曹操\", \"type\": \"name\", \"start\": 16, \"end\": 17}, {\"entity\": \"文物队\", \"type\": \"organization\", \"start\": 20, \"end\": 22}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "对此，原告代理律师指出，原告在签署认购合同时，从未看到过写明购买产品为一年期“金通道”",
+    "output": "[{\"entity\": \"代理律师\", \"type\": \"position\", \"start\": 5, \"end\": 8}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "姚不仙亚盘解析：切尔西罗马稳胜利物浦前景黯淡",
+    "output": "[{\"entity\": \"姚不仙\", \"type\": \"name\", \"start\": 0, \"end\": 2}, {\"entity\": \"切尔西\", \"type\": \"organization\", \"start\": 8, \"end\": 10}, {\"entity\": \"罗马\", \"type\": \"organization\", \"start\": 11, \"end\": 12}, {\"entity\": \"利物浦\", \"type\": \"organization\", \"start\": 15, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "拍卖公司的预展，找故宫的相关记载资料来看一看，对乾隆时期的主要艺人多多了解。竹木牙角是一个门类，",
+    "output": "[{\"entity\": \"故宫\", \"type\": \"scene\", \"start\": 9, \"end\": 10}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "当记者在泗水街头随便询问10余名市民却发现，只有寥寥几人知道当地有如此神奇的东西。",
+    "output": "[{\"entity\": \"记者\", \"type\": \"position\", \"start\": 1, \"end\": 2}, {\"entity\": \"泗水街\", \"type\": \"address\", \"start\": 4, \"end\": 6}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "丽泽金融商务区具有金融地产和地铁地产的商机，因此我们提出综合开发的理念，",
+    "output": "[{\"entity\": \"丽泽金融商务区\", \"type\": \"address\", \"start\": 0, \"end\": 6}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "澳彩开出客让半一2.00水的亚盘，近况甚佳的罗马让球并不到位。切沃上轮客胜乌迪内斯，士气高涨，",
+    "output": "[{\"entity\": \"罗马\", \"type\": \"organization\", \"start\": 22, \"end\": 23}, {\"entity\": \"切沃\", \"type\": \"organization\", \"start\": 31, \"end\": 32}, {\"entity\": \"乌迪内斯\", \"type\": \"organization\", \"start\": 37, \"end\": 40}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "汉诺威96队vs卡尔斯鲁厄队两队在德甲联赛历史上只交战过16场，汉诺威96队8胜2平6负稍占上风，",
+    "output": "[{\"entity\": \"汉诺威96队\", \"type\": \"organization\", \"start\": 0, \"end\": 5}, {\"entity\": \"卡尔斯鲁厄队\", \"type\": \"organization\", \"start\": 8, \"end\": 13}, {\"entity\": \"德甲\", \"type\": \"organization\", \"start\": 17, \"end\": 18}, {\"entity\": \"汉诺威96队\", \"type\": \"organization\", \"start\": 32, \"end\": 37}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "1，尽量增加非技术性因素（war3外）的复杂程度，我的适应性更好，好很多。2，",
+    "output": "[{\"entity\": \"war3\", \"type\": \"game\", \"start\": 13, \"end\": 16}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "(发表于2011年《大众软件》1月下)",
+    "output": "[{\"entity\": \"《大众软件》\", \"type\": \"book\", \"start\": 9, \"end\": 14}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "力求让球队表现更加完美。热那亚主强客弱之势更加明显，本赛季6个主场竟然全胜，对手中还包括了米兰、",
+    "output": "[{\"entity\": \"热那亚\", \"type\": \"organization\", \"start\": 12, \"end\": 14}, {\"entity\": \"米兰\", \"type\": \"organization\", \"start\": 45, \"end\": 46}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "仙游县委有关负责人说，目前，他们对已授牌认证的成品，特别是展厅内摆设的成品展开检查。",
+    "output": "[{\"entity\": \"仙游县委\", \"type\": \"position\", \"start\": 0, \"end\": 3}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "诸侯曰类宫。”东汉蔡邕的《明堂丹令论》解释为：“取其四面环水，圆如壁，后世遂名辟雍。”魏晋南北朝、",
+    "output": "[{\"entity\": \"蔡邕\", \"type\": \"name\", \"start\": 9, \"end\": 10}, {\"entity\": \"《明堂丹令论》\", \"type\": \"book\", \"start\": 12, \"end\": 18}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "深圳市人大常委会批准的58个项目中,有2个保障房项目,分别是松坪村三期和深康村。",
+    "output": "[{\"entity\": \"深圳市人大常委会\", \"type\": \"government\", \"start\": 0, \"end\": 7}, {\"entity\": \"松坪村\", \"type\": \"address\", \"start\": 30, \"end\": 32}, {\"entity\": \"深康村\", \"type\": \"address\", \"start\": 36, \"end\": 38}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "米特罗凡·莫斯卡伦科”号目前仍在俄罗斯海军中服役。",
+    "output": "[{\"entity\": \"俄罗斯海军\", \"type\": \"government\", \"start\": 16, \"end\": 20}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "《艺术与投资》：对你来说是一个水到渠成的事情？",
+    "output": "[{\"entity\": \"《艺术与投资》\", \"type\": \"book\", \"start\": 0, \"end\": 6}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "不少人表示本届比赛由于是DOTA2首次面世，因此巨额的奖金无可厚非，",
+    "output": "[{\"entity\": \"DOTA2\", \"type\": \"game\", \"start\": 12, \"end\": 16}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "或者可以直接登陆美国使馆的网站来查询。",
+    "output": "[{\"entity\": \"美国使馆\", \"type\": \"government\", \"start\": 8, \"end\": 11}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "家住宝城的梁京去年办了张信用卡，有三次未及时还款，前不久他计划买住房时，去售楼部打听得知，",
+    "output": "[{\"entity\": \"宝城\", \"type\": \"address\", \"start\": 2, \"end\": 3}, {\"entity\": \"梁京\", \"type\": \"name\", \"start\": 5, \"end\": 6}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "要知道志愿军空军无论从战果还是所付出的牺牲，都要高于外援。好在从机种和战役的编排上看，",
+    "output": "[{\"entity\": \"空军\", \"type\": \"government\", \"start\": 6, \"end\": 7}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "怎样做才能避免拒签？新浪出国频道邀请到美国使馆签证处的签证官江德力（charles",
+    "output": "[{\"entity\": \"新浪\", \"type\": \"company\", \"start\": 10, \"end\": 11}, {\"entity\": \"美国使馆\", \"type\": \"government\", \"start\": 19, \"end\": 22}, {\"entity\": \"签证官\", \"type\": \"position\", \"start\": 27, \"end\": 29}, {\"entity\": \"江德力\", \"type\": \"name\", \"start\": 30, \"end\": 32}, {\"entity\": \"（charles\", \"type\": \"name\", \"start\": 33, \"end\": 40}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "但当前的情况是，德沃夫已经有妻子，但据传已经分居。而希尔顿也已经有正式男友，但这毕竟是好莱坞。（",
+    "output": "[{\"entity\": \"德沃夫\", \"type\": \"name\", \"start\": 8, \"end\": 10}, {\"entity\": \"希尔顿\", \"type\": \"name\", \"start\": 26, \"end\": 28}, {\"entity\": \"好莱坞\", \"type\": \"organization\", \"start\": 43, \"end\": 45}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "并秀出你的创造物。”《模拟人生3》执行制作人BenBell这样表示。“",
+    "output": "[{\"entity\": \"《模拟人生3》\", \"type\": \"game\", \"start\": 10, \"end\": 16}, {\"entity\": \"执行制作人\", \"type\": \"position\", \"start\": 17, \"end\": 21}, {\"entity\": \"BenBell\", \"type\": \"name\", \"start\": 22, \"end\": 28}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "世上或许有两个人并不那么喜欢LewisCarroll的原著小说《爱丽斯梦游奇境》(",
+    "output": "[{\"entity\": \"LewisCarroll\", \"type\": \"name\", \"start\": 14, \"end\": 25}, {\"entity\": \"《爱丽斯梦游奇境》\", \"type\": \"book\", \"start\": 31, \"end\": 39}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "属于翡翠中的高端产品。高老板告诉记者，这块冰种翡翠挂件2003年的价格是4000元，",
+    "output": "[{\"entity\": \"老板\", \"type\": \"position\", \"start\": 12, \"end\": 13}, {\"entity\": \"记者\", \"type\": \"position\", \"start\": 16, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "方传柳实习生王梦菲",
+    "output": "[{\"entity\": \"方传柳\", \"type\": \"name\", \"start\": 0, \"end\": 2}, {\"entity\": \"实习生\", \"type\": \"position\", \"start\": 3, \"end\": 5}, {\"entity\": \"王梦菲\", \"type\": \"name\", \"start\": 6, \"end\": 8}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "如果要办，必须提供收入证明和工作证明。据招行工作人员介绍，从年初开始，就停止了接受大学生“",
+    "output": "[{\"entity\": \"招行\", \"type\": \"company\", \"start\": 20, \"end\": 21}, {\"entity\": \"大学生\", \"type\": \"position\", \"start\": 41, \"end\": 43}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "天津成立了中国首个私募股权投资基金协会。",
+    "output": "[{\"entity\": \"天津\", \"type\": \"address\", \"start\": 0, \"end\": 1}, {\"entity\": \"中国\", \"type\": \"address\", \"start\": 5, \"end\": 6}, {\"entity\": \"私募股权投资基金协会\", \"type\": \"organization\", \"start\": 9, \"end\": 18}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "昨天我们为大家报导了新植入DOTA2的17位英雄的消息（相关新闻），仅时隔一日，",
+    "output": "[{\"entity\": \"DOTA2\", \"type\": \"game\", \"start\": 13, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "记者了解到，南京一位曾经做过期货的大户一次性投入160万元，炒起了白银。结果不到一个月的时间，",
+    "output": "[{\"entity\": \"记者\", \"type\": \"position\", \"start\": 0, \"end\": 1}, {\"entity\": \"南京\", \"type\": \"address\", \"start\": 6, \"end\": 7}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "街霸》电影。",
+    "output": "[{\"entity\": \"街霸》\", \"type\": \"movie\", \"start\": 0, \"end\": 2}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "姜山：汉堡最近很是糟糕，上轮做客汉诺威更是3球惨败，不过他们本周中没有欧战任务，",
+    "output": "[{\"entity\": \"姜山\", \"type\": \"name\", \"start\": 0, \"end\": 1}, {\"entity\": \"汉堡\", \"type\": \"organization\", \"start\": 3, \"end\": 4}, {\"entity\": \"汉诺威\", \"type\": \"organization\", \"start\": 16, \"end\": 18}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "andtechnology）撰写的，发表在《莫斯科防务简讯》（moscowdefence",
+    "output": "[{\"entity\": \"andtechnology\", \"type\": \"name\", \"start\": 0, \"end\": 12}, {\"entity\": \"《莫斯科防务简讯》\", \"type\": \"book\", \"start\": 21, \"end\": 29}, {\"entity\": \"moscowdefence\", \"type\": \"book\", \"start\": 31, \"end\": 43}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "中博传媒与新加坡家乐电影合作，也非常明确地体现了中博传媒的国际视野。拍摄《危险关系》",
+    "output": "[{\"entity\": \"中博传媒\", \"type\": \"company\", \"start\": 0, \"end\": 3}, {\"entity\": \"新加坡家乐电影\", \"type\": \"company\", \"start\": 5, \"end\": 11}, {\"entity\": \"中博传媒\", \"type\": \"company\", \"start\": 24, \"end\": 27}, {\"entity\": \"《危险关系》\", \"type\": \"movie\", \"start\": 36, \"end\": 41}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "金石开：建议关注一下做客维冈的米堡吧。联赛初期表现不错的米堡因为索斯盖特拿了一个8月最佳教练奖，",
+    "output": "[{\"entity\": \"金石开\", \"type\": \"name\", \"start\": 0, \"end\": 2}, {\"entity\": \"维冈\", \"type\": \"organization\", \"start\": 12, \"end\": 13}, {\"entity\": \"米堡\", \"type\": \"organization\", \"start\": 15, \"end\": 16}, {\"entity\": \"索斯盖特\", \"type\": \"name\", \"start\": 32, \"end\": 35}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "而且在7个客场打入14球进攻比主场更凶猛，热奥瓦尼、马龙·",
+    "output": "[{\"entity\": \"热奥瓦尼\", \"type\": \"name\", \"start\": 21, \"end\": 24}, {\"entity\": \"马龙\", \"type\": \"name\", \"start\": 26, \"end\": 27}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "乐成中心的ceo周东权先生",
+    "output": "[{\"entity\": \"乐成中心\", \"type\": \"company\", \"start\": 0, \"end\": 3}, {\"entity\": \"ceo\", \"type\": \"position\", \"start\": 5, \"end\": 7}, {\"entity\": \"周东权\", \"type\": \"name\", \"start\": 8, \"end\": 10}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "福州高先生告诉记者，他的浦发银行（600000）信用卡额度是2.7万元，如果申请了万用金，",
+    "output": "[{\"entity\": \"福州\", \"type\": \"address\", \"start\": 0, \"end\": 1}, {\"entity\": \"记者\", \"type\": \"position\", \"start\": 7, \"end\": 8}, {\"entity\": \"浦发银行\", \"type\": \"company\", \"start\": 12, \"end\": 15}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "的文章严重侵害了她的隐私权、名誉权，上诉要求广州中院依法改判一审判决，判决两被告承担恢复名誉、",
+    "output": "[{\"entity\": \"广州中院\", \"type\": \"government\", \"start\": 22, \"end\": 25}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "在联赛杯中输给布莱克本的比赛后，莫耶斯对球队在布莱克本埃伍德公园的表现极为不满，",
+    "output": "[{\"entity\": \"布莱克本\", \"type\": \"organization\", \"start\": 7, \"end\": 10}, {\"entity\": \"莫耶斯\", \"type\": \"name\", \"start\": 16, \"end\": 18}, {\"entity\": \"布莱克本埃伍德公园\", \"type\": \"address\", \"start\": 23, \"end\": 31}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "本报讯（记者马力）市土地整理储备中心昨天发布，房山长阳镇地块入市，其中将配建16万平米的限价房，",
+    "output": "[{\"entity\": \"记者\", \"type\": \"position\", \"start\": 4, \"end\": 5}, {\"entity\": \"马力\", \"type\": \"name\", \"start\": 6, \"end\": 7}, {\"entity\": \"市土地整理储备中心\", \"type\": \"government\", \"start\": 9, \"end\": 17}, {\"entity\": \"房山长阳镇\", \"type\": \"address\", \"start\": 23, \"end\": 27}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "沃霍尔手绘杰作“大坎贝尔浓汤罐头”（蔬菜）是波普艺术的代表作，也是沃霍尔备受喜爱的“坎贝尔浓汤罐头”",
+    "output": "[{\"entity\": \"沃霍尔\", \"type\": \"name\", \"start\": 0, \"end\": 2}, {\"entity\": \"“大坎贝尔浓汤罐头”（蔬菜）\", \"type\": \"book\", \"start\": 7, \"end\": 20}, {\"entity\": \"波普\", \"type\": \"name\", \"start\": 22, \"end\": 23}, {\"entity\": \"沃霍尔\", \"type\": \"name\", \"start\": 33, \"end\": 35}, {\"entity\": \"坎贝尔浓汤罐头\", \"type\": \"book\", \"start\": 42, \"end\": 48}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "接受锦旗的刑警李济舟还原了案件经过。",
+    "output": "[{\"entity\": \"刑警\", \"type\": \"position\", \"start\": 5, \"end\": 6}, {\"entity\": \"李济舟\", \"type\": \"name\", \"start\": 7, \"end\": 9}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "普遍呈现利润大幅上升的情况。除深发展由于提高信贷拨备同时核销大量不良资产导致净利润下滑七成之外，",
+    "output": "[{\"entity\": \"深发展\", \"type\": \"company\", \"start\": 15, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "著名策略游戏《要塞》系列的开发商Firefly",
+    "output": "[{\"entity\": \"《要塞》\", \"type\": \"game\", \"start\": 6, \"end\": 9}, {\"entity\": \"Firefly\", \"type\": \"company\", \"start\": 16, \"end\": 22}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "EA表示，《孢子：银河冒险》主要是为了给《孢子》的太空阶段增加游戏深度与变化。",
+    "output": "[{\"entity\": \"EA\", \"type\": \"company\", \"start\": 0, \"end\": 1}, {\"entity\": \"《孢子：银河冒险》\", \"type\": \"game\", \"start\": 5, \"end\": 13}, {\"entity\": \"《孢子》\", \"type\": \"game\", \"start\": 20, \"end\": 23}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "前几年，香港贸易发展局数次的组织寰宇娱乐、骄阳电影、美亚电影、寰亚综艺、东方电影、",
+    "output": "[{\"entity\": \"香港贸易发展局\", \"type\": \"government\", \"start\": 4, \"end\": 10}, {\"entity\": \"寰宇娱乐\", \"type\": \"company\", \"start\": 16, \"end\": 19}, {\"entity\": \"骄阳电影\", \"type\": \"company\", \"start\": 21, \"end\": 24}, {\"entity\": \"美亚电影\", \"type\": \"company\", \"start\": 26, \"end\": 29}, {\"entity\": \"寰亚综艺\", \"type\": \"company\", \"start\": 31, \"end\": 34}, {\"entity\": \"东方电影\", \"type\": \"company\", \"start\": 36, \"end\": 39}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "介绍一个背景。（张永和）设计完以后，这个项目请了一些艺术家，他们来了以后把别墅的设计想法搁进来。",
+    "output": "[{\"entity\": \"张永和\", \"type\": \"name\", \"start\": 8, \"end\": 10}, {\"entity\": \"艺术家\", \"type\": \"position\", \"start\": 26, \"end\": 28}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "故称这片区域为垦丁。",
+    "output": "[{\"entity\": \"垦丁\", \"type\": \"address\", \"start\": 7, \"end\": 8}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "国内DOTA职业战队成员荣誉一览",
+    "output": "[{\"entity\": \"DOTA\", \"type\": \"game\", \"start\": 2, \"end\": 5}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "大众软件：山里有座庙闲谈游戏里的游戏",
+    "output": "[{\"entity\": \"大众软件\", \"type\": \"book\", \"start\": 0, \"end\": 3}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "有声小说性爱录音有声连载色情小说金鳞全集少妇白洁冰峰魔恋天地之间精品内容",
+    "output": "[{\"entity\": \"金鳞全集\", \"type\": \"book\", \"start\": 16, \"end\": 19}, {\"entity\": \"少妇白洁\", \"type\": \"book\", \"start\": 20, \"end\": 23}, {\"entity\": \"冰峰魔恋\", \"type\": \"book\", \"start\": 24, \"end\": 27}, {\"entity\": \"天地之间\", \"type\": \"book\", \"start\": 28, \"end\": 31}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "他们将占据小组第一的位置。目前两队均在国内联赛中排名第三，上周末曼联强攻维拉未果，",
+    "output": "[{\"entity\": \"曼联\", \"type\": \"organization\", \"start\": 32, \"end\": 33}, {\"entity\": \"维拉\", \"type\": \"organization\", \"start\": 36, \"end\": 37}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "【吴海花】：我代表北京《百姓地产》杂志感谢大家赶来参加今天《新老金融街争锋—",
+    "output": "[{\"entity\": \"【吴海花】\", \"type\": \"name\", \"start\": 0, \"end\": 4}, {\"entity\": \"《百姓地产》\", \"type\": \"book\", \"start\": 11, \"end\": 16}, {\"entity\": \"《新老金融街争锋—\", \"type\": \"book\", \"start\": 29, \"end\": 37}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "中国国际城市化发展战略研究委员会主办，国瑞地产、国瑞购物中心承办的“城市化进程与商业地产发展趋势，",
+    "output": "[{\"entity\": \"中国国际城市化发展战略研究委员会\", \"type\": \"government\", \"start\": 0, \"end\": 15}, {\"entity\": \"国瑞地产\", \"type\": \"company\", \"start\": 19, \"end\": 22}, {\"entity\": \"国瑞购物中心\", \"type\": \"company\", \"start\": 24, \"end\": 29}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "1995年底，由于邮政局整顿集邮市场，李永春和其他经营业户重新搬回到马路上摆摊经营。",
+    "output": "[{\"entity\": \"邮政局\", \"type\": \"government\", \"start\": 9, \"end\": 11}, {\"entity\": \"李永春\", \"type\": \"name\", \"start\": 19, \"end\": 21}, {\"entity\": \"经营业户\", \"type\": \"position\", \"start\": 25, \"end\": 28}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "主队强调整体，客队则依靠球星一锤定音。当然努曼西亚的主场优势不容小视。而马竞的客场成绩有待于提高。",
+    "output": "[{\"entity\": \"努曼西亚\", \"type\": \"organization\", \"start\": 21, \"end\": 24}, {\"entity\": \"马竞\", \"type\": \"organization\", \"start\": 36, \"end\": 37}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "但是不良率仍在上升，2008年6月底招商银行信用卡的不良贷款率为2.74%，比2007年末上升了0.",
+    "output": "[{\"entity\": \"招商银行\", \"type\": \"company\", \"start\": 18, \"end\": 21}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "LOL的话是个好游戏，主要是企鹅代理了其次还是企鹅代理了，有心理阴影的。",
+    "output": "[{\"entity\": \"LOL\", \"type\": \"game\", \"start\": 0, \"end\": 2}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "不管怎样他们都是希望能再往前走的，更何况对手奈梅亨出线希望渺茫，可以认为，",
+    "output": "[{\"entity\": \"奈梅亨\", \"type\": \"organization\", \"start\": 22, \"end\": 24}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "S60概念车推广游戏《沃尔沃》免费玩",
+    "output": "[{\"entity\": \"《沃尔沃》\", \"type\": \"game\", \"start\": 10, \"end\": 14}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "最近迪士尼宣布将于2010年或者2011年推出《电子世界争霸战》的续作《电子世界争霸战",
+    "output": "[{\"entity\": \"迪士尼\", \"type\": \"company\", \"start\": 2, \"end\": 4}, {\"entity\": \"《电子世界争霸战》\", \"type\": \"game\", \"start\": 23, \"end\": 31}, {\"entity\": \"《电子世界争霸战\", \"type\": \"game\", \"start\": 35, \"end\": 42}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "由古如鲁益坚赞创建于公园8世纪的古琼寺，初为宁玛派，后来在蒙古固始汗派兵征伐西藏时被毁，",
+    "output": "[{\"entity\": \"古如鲁益坚赞\", \"type\": \"name\", \"start\": 1, \"end\": 6}, {\"entity\": \"古琼寺\", \"type\": \"scene\", \"start\": 16, \"end\": 18}, {\"entity\": \"西藏\", \"type\": \"address\", \"start\": 38, \"end\": 39}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "《生存之旅》生存包今日提供免费下载",
+    "output": "[{\"entity\": \"《生存之旅》\", \"type\": \"game\", \"start\": 0, \"end\": 5}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "不过影片也暴露出一些问题，一是过度的夸张，尤其是在吴京闯警署杀兄弟灭口的那段（这点将当年的《杀破狼》",
+    "output": "[{\"entity\": \"吴京\", \"type\": \"name\", \"start\": 25, \"end\": 26}, {\"entity\": \"警署\", \"type\": \"government\", \"start\": 28, \"end\": 29}, {\"entity\": \"《杀破狼》\", \"type\": \"movie\", \"start\": 45, \"end\": 49}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "自此CPL2011第一阶段线上选拔赛DOTA项目正式结束，恭喜出线的4支队伍。",
+    "output": "[{\"entity\": \"CPL\", \"type\": \"organization\", \"start\": 2, \"end\": 4}, {\"entity\": \"DOTA\", \"type\": \"game\", \"start\": 18, \"end\": 21}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "都已经进入公测期，目前盈利状况良好。此外，金山旗下最受期待的游戏《剑侠情缘网络版3》",
+    "output": "[{\"entity\": \"金山\", \"type\": \"company\", \"start\": 21, \"end\": 22}, {\"entity\": \"《剑侠情缘网络版3》\", \"type\": \"game\", \"start\": 32, \"end\": 41}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "其实，联储还有其他技巧，大家可以回想一下伯南克2002年11月的讲话。",
+    "output": "[{\"entity\": \"伯南克\", \"type\": \"name\", \"start\": 20, \"end\": 22}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "每经记者汤白露发自北京",
+    "output": "[{\"entity\": \"每经\", \"type\": \"book\", \"start\": 0, \"end\": 1}, {\"entity\": \"记者\", \"type\": \"position\", \"start\": 2, \"end\": 3}, {\"entity\": \"汤白露\", \"type\": \"name\", \"start\": 4, \"end\": 6}, {\"entity\": \"北京\", \"type\": \"address\", \"start\": 9, \"end\": 10}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "香格里拉大道等。玩家将运用游戏系统包括攀爬、潜入、匿声杀人等技巧，",
+    "output": "[{\"entity\": \"香格里拉大道\", \"type\": \"scene\", \"start\": 0, \"end\": 5}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "拆除大使馆外隔离墩等行为。但也没有真的撕破脸皮，采取实质性的报复行动。中国则不然，",
+    "output": "[{\"entity\": \"大使馆\", \"type\": \"address\", \"start\": 2, \"end\": 4}, {\"entity\": \"中国\", \"type\": \"address\", \"start\": 35, \"end\": 36}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "这种艺术走进生活的方式，由地产商出面支持，为艺术家提供免费的酒店式服务，而鼓励他们的创作。",
+    "output": "[{\"entity\": \"地产商\", \"type\": \"position\", \"start\": 13, \"end\": 15}, {\"entity\": \"艺术家\", \"type\": \"position\", \"start\": 22, \"end\": 24}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "主持人：刚才您也提到咱们这个球场是有特点的，也是出资大师的手笔，你们自己经常在球场上打球吗？",
+    "output": "[{\"entity\": \"主持人\", \"type\": \"position\", \"start\": 0, \"end\": 2}, {\"entity\": \"大师\", \"type\": \"position\", \"start\": 26, \"end\": 27}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "这一盘口状态下英国必发公司亚洲盘交易数据显示博洛尼亚热。而从欧赔投注看，也是主队热。巴勒莫两连败，",
+    "output": "[{\"entity\": \"英国必发公司\", \"type\": \"company\", \"start\": 7, \"end\": 12}, {\"entity\": \"博洛尼亚\", \"type\": \"organization\", \"start\": 22, \"end\": 25}, {\"entity\": \"巴勒莫\", \"type\": \"organization\", \"start\": 42, \"end\": 44}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "条款过苛。因为若曲高和寡，黑市将依然存在。”新华社记者姚均芳",
+    "output": "[{\"entity\": \"新华社\", \"type\": \"organization\", \"start\": 22, \"end\": 24}, {\"entity\": \"记者\", \"type\": \"position\", \"start\": 25, \"end\": 26}, {\"entity\": \"姚均芳\", \"type\": \"name\", \"start\": 27, \"end\": 29}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "当天晚上，等到曹鹏飞和蔡朝阳等4人回到益阳，已经是晚上12点。",
+    "output": "[{\"entity\": \"曹鹏飞\", \"type\": \"name\", \"start\": 7, \"end\": 9}, {\"entity\": \"蔡朝阳\", \"type\": \"name\", \"start\": 11, \"end\": 13}, {\"entity\": \"益阳\", \"type\": \"address\", \"start\": 19, \"end\": 20}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "正是在海豚馆中短暂的康复期间，“比利”看到了其他海豚“尾部行走”的精彩表演，",
+    "output": "[{\"entity\": \"海豚馆\", \"type\": \"scene\", \"start\": 3, \"end\": 5}, {\"entity\": \"比利\", \"type\": \"name\", \"start\": 16, \"end\": 17}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "勒沃库森队vs拜仁慕尼黑队两队在德甲联赛历史上只交战过58场，勒沃库森队13胜10平35负处于劣势，",
+    "output": "[{\"entity\": \"勒沃库森队\", \"type\": \"organization\", \"start\": 0, \"end\": 4}, {\"entity\": \"拜仁慕尼黑队\", \"type\": \"organization\", \"start\": 7, \"end\": 12}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "市房管部门将启动一场大规模的限价房调研。在昨天的拍地会上，",
+    "output": "[{\"entity\": \"市房管\", \"type\": \"government\", \"start\": 0, \"end\": 2}]"
+  },
+  {
+    "instruction": "请从给定文本中抽取命名实体，并按 JSON 数组格式返回，每个元素包含 entity、type、start、end 字段。",
+    "input": "星际争霸2兵种音效）",
+    "output": "[{\"entity\": \"星际争霸2\", \"type\": \"game\", \"start\": 0, \"end\": 4}]"
+  }
+]
